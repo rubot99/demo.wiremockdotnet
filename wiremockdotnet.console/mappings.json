@@ -1,0 +1,21 @@
+{
+  "Request": {
+    "Url": {
+      "Matchers": [
+        {
+          "Name": "WildcardMatcher",
+          "Pattern": "/otp"
+        }
+      ]
+    },
+    "Methods": [ "get" ]
+  },
+  "Response": {
+    "BodyAsJson": {
+      "searchResults": [
+        { "link": "http://example.com" }
+      ]
+    },
+    "Headers": { "Content-Type": "application/json" }
+  }
+}
